@@ -1,0 +1,301 @@
+
+<!-- Los comentarios a lo largo del codigo son muy importantes nos ayudan  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HELADO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="imag/descarga.png">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons --> 
+
+
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>HELADO</b></h1>
+    <h6>Bienvenidos a <span class="w3-tag">mi heladeria</span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="/imag/banner.jpg" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white"></h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>Tu mundo de sabores</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">INCRESAR</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Heladeria ricatto</h3>
+          <h5>Deleitat-e con tu sabor favorito
+              <span class="w3-opacity">yummy</span>
+          </h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="/imag/4....jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16"> 
+          <p><strong> Esta heladeria cuenta con una gran cantidad de sabores y golosinas! aquí podrás encontrar el sabor de tu preferencia, este proyecto fue basado en el gusto de la comunidad, compartir con tu familia y amigos es algo escensial y pensamos que llegar a este lugar seria conveniente para tener un ambiente sano con las personas que desees compartir esperamos que se sientan comodos.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>comentarios  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="imag/7...jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Helado de brawnie <span class="w3-opacity w3-medium"></span></h4>
+                <p>Especialidad de la casa</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Variedad de helados</h3>
+          <h5><span class="w3-opacity">yummy</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="imag/6....jpg" alt="Delicias" style="width:100%" class="w3-padding-16">
+          <p><strong></strong></p>
+          <p>Con solo mirar te deleitas</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>comentarios  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="imag/diego.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Diego<span class="w3-opacity w3-medium">April 19, 2023, 7:22 PM</span></h4>
+                <p>Que delicia</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="imag/juanse.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>juan  <span class="w3-opacity w3-medium">April 8, 2015, 10:32 PM</span></h4>
+                <p>Exceletente lugar para compartir en familia.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="imag/adriana.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Adriana <span class="w3-opacity w3-medium">April 7, 2015, 9:12 PM</span></h4>
+                <p>Mi helado favorito es el de brawnie!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="imag/FRESA ...jpg" alt="Jane" style="width:100%" >
+        <div class="w3-container w3-black">
+          <h4>Helado de fresa</h4>
+          <p>Otra de nuestras especialidades</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Mas delicias que puedes encontrar </h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="imag/helado 5.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">sabores que impactan, sensaciones que enamoran </span>
+            <br>
+            <span>Delicias</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="imag/helado 6.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Helados</span>
+            <br>
+            <span> Elige el de tu preferencia!</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="imag/sabores de helado.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Combina sabores y has que el mundo conspire a tu alrededor</span>
+            <br>
+            <span></span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="imag/helado 4.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+            <span class="w3-large">Frey</span>
+            <br>
+            <span>Que ricuras, yummy!</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+     
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Helado</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Heladeria ricatto</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Helado de fresa</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sabores de helado</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">ICE cream a la vuelta</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Inspiration</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><img src="imag/11...jpg" alt="Jeans" style="width:100%"></p>
+            <p><img src="imag/12...jpg" alt="Jeans" style="width:100%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="imag/10...jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+            <p><img src="imag/13...jpg" alt="Jeans" style="width:100%"></p>
+         </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Me</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail deleitat-e</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container " style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
